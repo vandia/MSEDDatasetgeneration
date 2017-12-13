@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/MSREclipse.iml" filepath="$PROJECT_DIR$/MSREclipse.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MSEDProcessXML.iml" filepath="$PROJECT_DIR$/MSEDProcessXML.iml" />
     </modules>
   </component>
 </project>

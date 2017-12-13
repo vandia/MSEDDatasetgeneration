@@ -7,7 +7,7 @@
     <xsl:param name="break" select="'&#xA;'" />
 
     <xsl:template match="/">
-        <xsl:text>id,directoryId,userName,lowerUserName,active,createdDate,updatedDate,displayName,lowerDisplayName,emailAddress,lowerEmailAddress,credential,externalId,localServiceDeskUser,localServiceDeskUser </xsl:text><xsl:value-of select="$break" />
+        <xsl:text>id,directoryId,userName,lowerUserName,active,createdDate,updatedDate,displayName,lowerDisplayName,emailAddress,lowerEmailAddress,credential,localServiceDeskUser</xsl:text><xsl:value-of select="$break" />
         <xsl:apply-templates select="entity-engine-xml/User"/>
     </xsl:template>
 
@@ -24,7 +24,6 @@
             select="normalize-space(@emailAddress)" /><xsl:value-of select="$delim"/><xsl:value-of
             select="normalize-space(@lowerEmailAddress)" /><xsl:value-of select="$delim"/><xsl:value-of
             select="normalize-space(@credential)" /><xsl:value-of select="$delim"/><xsl:value-of
-            select="normalize-space(@externalId)" /><xsl:value-of select="$delim"/><xsl:value-of
             select="normalize-space(@localServiceDeskUser)"/>
         <xsl:value-of select="$break" />
     </xsl:template>
